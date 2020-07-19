@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: epinv
+  #thymeleaf 配置
+  thymeleaf:
+    mode: HTML5
+    encoding: UTF-8
+    servlet:
+      content-type: text/html
+    #缓存设置为false, 这样修改之后马上生效，便于调试
+    cache: false
+  #数据库
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/epinv?useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=GMT%2B8
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+server:
+  port: 8080
